@@ -1,18 +1,17 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% Graham Patterson Resume
+%
 
-
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 % modern themes
-\moderncvstyle{casual}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+
+% color options 'blue' (default), 'orange', 'green',
+% 'red', 'purple', 'grey' and 'black'
+
+\nopagenumbers{}
 
 % character encoding
 \usepackage[utf8]{inputenc}
@@ -20,40 +19,16 @@
 \usepackage{fontawesome}
 \usepackage{tabularx}
 \usepackage{ragged2e}
-% if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[scale=0.86]{geometry}
 \usepackage{multicol}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{import}
 
 % personal data
 \name{Graham}{Patterson}
-
-% \address{192 Lenox Ave, NY, New York, 10026}{}{}
-% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
-% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
-% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
-% \extrainfo{}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l}
@@ -77,7 +52,7 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\customcvproject}[4][.25em]{
+\newcommand*{\cvproject}[4][.25em]{
 %   \vfill\noindent
   \begin{tabular}{@{}l}
     {\bfseries #2}
@@ -111,69 +86,99 @@
 \end{center}
 
 \section{EDUCATION}
-{\customcventry{Expected: May 2019}{Bachelor of Arts in Computer Science GPA: 3.68}{Columbia University}{New York, New York}{}{}}
+{\customcventry {Expected: May 2019}{Bachelor of Arts in Computer Science GPA: 3.68}
+		  {Columbia University}{New York, New York}{}{}}
 Dean’s List (’16, ’17 academic years)
 
 \section{EXPERIENCE}
 
-{\customcventry{May 2018 - August 2018}{Software Engineering Intern}{Bloomberg LP}{New York, New York}{}
+{\customcventry {May 2018 - August 2018}{Software Engineering Intern}
+				{Bloomberg LP}{New York, New York}{}
 {\begin{itemize}
-  \item Collaborated with network engineers to design, implement, and deploy an interactive single-page web application used in diagnosis of Bloomberg's private global network by 34,000 additions to an existing code base over 129 commits and 41 merged pull requests
-  \item Designed and implemented a brand new Angular 6 frontend, creating an intelligent interface to a large data store of network state and configuration information
-  \item Built a historical feed view to explore and discover previously unknown features of time series data
-  \item Designed, optimized, and implemented a client-side algorithm for annotating and viewing changes in data over time, then displaying it in an intuitive and human-readable view
+  \item Collaborated with network engineers to design, implement, and deploy an
+		interactive single-page web application used in diagnosis of
+		Bloomberg's private global network by 34,000 additions to an existing
+		code base over 129 commits and 41 merged pull requests
+  \item Designed and implemented a brand new Angular 6 frontend, creating an
+		intelligent interface to a large data store of network state and
+		configuration information
+  \item Built a historical feed view to explore and discover previously unknown
+		features of time series data
+  \item Designed, optimized, and implemented a client-side algorithm for
+		annotating and viewing changes in data over time, then displaying it in
+		an intuitive and human-readable view
 \end{itemize}
 }
 \vspace{.5em}
-{\customcventry{May 2017 - Present}{Head Teaching Assistant, Teaching Assistant}{Columbia University, Department of Computer Science}{ New York, New York}{}{}
+{\customcventry {May 2017 - Present}{Head Teaching Assistant, Teaching Assistant}
+				{Columbia University, Department of Computer Science}
+				{ New York, New York}{}{}
 {\begin{itemize}
-  \item Classes: Introduction to Computer Science Programming in Java and Computing in Context (Python)
-  \item Lead recitations on Java and Python programming languages, Monte-Carlo simulations, financial models, and computer science fundamentals
-  \item Designed, distributed, and graded written, programming, and Jupyter notebook assignments
-\end{itemize}
-}
-
-\vspace{.5em}
-
-{\customcventry{May 2017 – Aug 2017}{Python Developer}{Columbia Lightwave Research Group}{New York, New York}{}
-{\begin{itemize}
-  \item Integrated lightwave instruments into a dynamic software system used in silicon photonics research to empower researchers with a software package that streamlined their laboratory experiments
-  \item Built a comprehensive documentation site using Sphinx and other Python system design tools
-  \item Deployed a socket network for remote interaction with tools and access to lab stations
-\end{itemize}
-}
-
-\vspace{.5em}
-
-{\customcventry{May 2016 – Aug 2016}{Cyber Intelligence Analyst Intern}{Flashpoint}{New York, New York}{}
-{\begin{itemize}
-  \item Provided researched analyses to security and intelligence teams across the Fortune 500 and governments to help them both obtain actionable intelligence, as well as gain critical awareness of threatening actors
-  \item Processed primary source data gleaned from Deep and Dark Web using Python, RegEx and other data wrangling tools, to provide relevant and consumable intelligence products
+  \item Classes: Introduction to Computer Science Programming in Java and
+		Computing in Context (Python)
+  \item Lead recitations on Java and Python programming languages, Monte-Carlo
+		simulations, financial models, and computer science fundamentals
+  \item Designed, distributed, and graded written, programming, and Jupyter
+		notebook assignments
 \end{itemize}
 }
 
 \vspace{.5em}
 
-{\customcventry{June 2009 - October 2014}{Operations Officer, Sergeant}{United States Marine Corps, Embassy Security Group}{Various Locations}{}
+{\customcventry {May 2017 – Aug 2017}{Python Developer}
+				{Columbia Lightwave Research Group}{New York, New York}{}
 {\begin{itemize}
-  \item Lead 4 teams of 14 Marines in daily operations and provided occupational expertise and leadership
-  \item Coordinated with other U.S. security agencies, reducing overlap and increasing readiness amongst teams
-  \item Provided armed internal security, personel security, and access control at several U.S. diplomatic missions  including Kabul, Afghanistan; London, England; Santo Domingo, Dominican Republic
+  \item Integrated lightwave instruments into a dynamic software system used in
+		silicon photonics research to empower researchers with a software
+		package that streamlined their laboratory experiments
+  \item Built a comprehensive documentation site using Sphinx and other Python
+		system design tools
+  \item Deployed a socket network for remote interaction with tools and access
+		to lab stations
 \end{itemize}
 }
+
+\vspace{.5em}
+
+{\customcventry {May 2016 – Aug 2016}{Cyber Intelligence Analyst Intern}
+				{Flashpoint}{New York, New York}{}
+{\begin{itemize}
+  \item Provided researched analyses to security and intelligence teams across
+		the Fortune 500 and governments to help them both obtain actionable
+		intelligence, as well as gain critical awareness of threatening actors
+  \item Processed primary source data gleaned from Deep and Dark Web using
+		Python, RegEx and other data wrangling tools, to provide relevant and
+		consumable intelligence products
+\end{itemize}
+}
+
+\vspace{.5em}
+
+{\customcventry {June 2009 - October 2014}{Operations Officer, Sergeant}
+				{United States Marine Corps, Embassy Security Group}
+				{Various Locations}{}
+{\begin{itemize}
+  \item Lead 4 teams of 14 Marines in daily operations and provided occupational
+		expertise and leadership
+  \item Coordinated with other U.S. security agencies, reducing overlap and
+		increasing readiness amongst teams
+  \item Provided armed internal security, personel security, and access control
+		at several U.S. diplomatic missions  including Kabul, Afghanistan;
+		London, England; Santo Domingo, Dominican Republic
+\end{itemize}
+}}
 
 \section{SKILLS}
-\begin{minipage}{\maincolumnwidth}%
+\begin{minipage}[b]{18cm}
 	\small{
     	\begin{itemize}
-          \item Languages: Python, C, Java, Javascript, Typescript, C++, and conversational in Arabic
+          \item Languages: Python, C, Golang, C++, Java, Javascript
           \item Frameworks: kernel programming, Django, Angular 2+, Sphinx
           \item Tools: git, Jira, Agile/Scrum, UNIX Environments, Jupyter
-          \item Honors: DE Shaw Group Nexus Fellow (Summer ’17)
+		  \item Honors: DE Shaw Group Nexus Fellow (Summer ’17), **named scholarship recipient**
 		\end{itemize}}%
 \end{minipage}%
 
-}
 
 \nocite{*}
 \bibliographystyle{plain}
@@ -181,9 +186,4 @@ Dean’s List (’16, ’17 academic years)
 
 \end{document}
 
-
 %% end of file
-
-
-
-
