@@ -21,7 +21,8 @@
 \usepackage{ragged2e}
 
 % adjust the page margins
-\usepackage[scale=0.86]{geometry}
+% \usepackage[scale=.90]{geometry}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
 \usepackage{multicol}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 
@@ -118,8 +119,6 @@ Dean’s List (’16, ’17 academic years)
 		Computing in Context (Python)
   \item Lead recitations on Java and Python programming languages, Monte-Carlo
 		simulations, financial models, and computer science fundamentals
-  \item Designed, distributed, and graded written, programming, and Jupyter
-		notebook assignments
 \end{itemize}
 }
 
@@ -133,22 +132,6 @@ Dean’s List (’16, ’17 academic years)
 		package that streamlined their laboratory experiments
   \item Built a comprehensive documentation site using Sphinx and other Python
 		system design tools
-  \item Deployed a socket network for remote interaction with tools and access
-		to lab stations
-\end{itemize}
-}
-
-\vspace{.5em}
-
-{\customcventry {May 2016 – Aug 2016}{Cyber Intelligence Analyst Intern}
-				{Flashpoint}{New York, New York}{}
-{\begin{itemize}
-  \item Provided researched analyses to security and intelligence teams across
-		the Fortune 500 and governments to help them both obtain actionable
-		intelligence, as well as gain critical awareness of threatening actors
-  \item Processed primary source data gleaned from Deep and Dark Web using
-		Python, RegEx and other data wrangling tools, to provide relevant and
-		consumable intelligence products
 \end{itemize}
 }
 
@@ -169,18 +152,28 @@ Dean’s List (’16, ’17 academic years)
 }}
 
 \section{PROJECTS}
-{\cvproject {Paxos Based KV-Store -- Go}{Fall '18}{}
+{\cvproject {Distributed Systems -- {\normalfont Go}}				{Fall '18}{}
 {\begin{itemize}
-  \item Implemented a Paxos library which provided fault tolerance and replication
-		for a client facing distributed key-value store
+  \item Implemented a Paxos library and client facing key-value store, providing
+		a fault tolerant and replicated storage service
 \end{itemize}
 }}
 
-{\cvproject {Linunx Kernel 4.9.81 -- C}{Spring '18}{}
+{\cvproject {Binary Rewriting -- {\normalfont C++}}					{Fall '18}{}
+{\begin{itemize}
+  \item Contributed to a binary rewriting framework that combines static and
+		dynamic techniques and compiler metadata to implement various binary
+		level security features of a target program on x86\_64 and aarch64.
+  \item Coauthored a paper submitted to USENIX 2019 describing and releasing
+		the framework
+\end{itemize}
+}}
+
+{\cvproject {Linunx Kernel 4.9.81 -- {\normalfont C}}			  {Spring '18}{}
 {\begin{itemize}
   \item Designed and implemented a stable round-robin scheduler which acted as
 		the default scheduling policy for all processes and kernel threads
-  \item Implemented a full feature file system including nested directories and
+  \item Built a full feature file system including nested directories and
 		links
 \end{itemize}
 }}
@@ -192,7 +185,7 @@ Dean’s List (’16, ’17 academic years)
           \item Languages: Python, C, Go, C++, Java, Javascript
           \item Frameworks: kernel programming, Django, Angular 2+, Sphinx
           \item Tools: git, Jira, Agile/Scrum, UNIX Environments, Jupyter
-		  \item Honors: DE Shaw Group Nexus Fellow (Summer ’17), **named scholarship recipient**
+		  \item Honors: DE Shaw Group Nexus Fellow (Summer ’17)
 		\end{itemize}}%
 \end{minipage}%
 
