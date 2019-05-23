@@ -19,6 +19,7 @@
 \usepackage{fontawesome}
 \usepackage{tabularx}
 \usepackage{ragged2e}
+%\usepackage{hyperref}
 
 % adjust the page margins
 % \usepackage[scale=.90]{geometry}
@@ -81,18 +82,25 @@
 
 \begin{center}
 \begin{tabular}{ c c c c }
- \faEnvelopeO\enspace gpp2109@columbia.edu  & \faMobile\enspace 856-278-0090 &
- \faGlobe\enspace grahampatterson.codes & \faGithub\enspace pattersongp \\
+		\faEnvelopeO\enspace \href{mailto:pattersongp001@gmail.com}{pattersongp001@gmail.com} &
+		\faMobile\enspace \href{tel:16469080002}{646-908-0002}&
+		\faGlobe\enspace \href{http://grahampatterson.codes}{grahampatterson.codes}&
+		\faGithub\enspace \href{https://www.github.com/pattersongp}{pattersongp} \\
 \end{tabular}
 \end{center}
 
 \section{EDUCATION}
-{\customcventry {Expected: May 2019}{Bachelor of Arts in Computer Science GPA: 3.68}
-		  {Columbia University}{New York, New York}{}{}}
-Dean’s List (’16, ’17 academic years)
+{\customcventry {Fall '15 - Spring '19}
+				{Bachelor of Arts in Computer Science, Magna Cum Laude}
+				{Columbia University}
+				{New York, New York}{}
+{\begin{itemize}
+		\item Dean’s List (’16, ’17, '18 academic years)
+		\item Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service
+\end{itemize}
+}
 
 \section{EXPERIENCE}
-
 {\customcventry {May 2018 - August 2018}{Software Engineering Intern}
 				{Bloomberg LP}{New York, New York}{}
 {\begin{itemize}
@@ -111,12 +119,12 @@ Dean’s List (’16, ’17 academic years)
 \end{itemize}
 }
 \vspace{.5em}
-{\customcventry {May 2017 - Present}{Head Teaching Assistant, Teaching Assistant}
+{\customcventry {May 2017 - July 2019}{Head Teaching Assistant, Teaching Assistant}
 				{Columbia University, Department of Computer Science}
-				{ New York, New York}{}{}
+				{New York, New York}{}
 {\begin{itemize}
-  \item Classes: Introduction to Computer Science Programming in Java and
-		Computing in Context (Python)
+  \item Classes: Design Using C++ with Bjarne Stroustrup, Introduction to
+		Computer Science Programming in Java, and Computing in Context (Python)
   \item Lead recitations on Java and Python programming languages, Monte-Carlo
 		simulations, financial models, and computer science fundamentals
 \end{itemize}
@@ -164,8 +172,8 @@ Dean’s List (’16, ’17 academic years)
   \item Contributed to a binary rewriting framework that combines static and
 		dynamic techniques and compiler metadata to implement various binary
 		level security features of a target program on x86\_64 and aarch64.
-  \item Coauthored a paper submitted to USENIX 2019 describing and releasing
-		the framework
+%  \item Coauthored a paper submitted to USENIX 2019 describing and releasing
+%		the framework
 \end{itemize}
 }}
 
@@ -173,8 +181,7 @@ Dean’s List (’16, ’17 academic years)
 {\begin{itemize}
   \item Designed and implemented a stable round-robin scheduler which acted as
 		the default scheduling policy for all processes and kernel threads
-  \item Built a full feature file system including nested directories and
-		links
+  \item Built a full feature file system including nested directories and links
 \end{itemize}
 }}
 
