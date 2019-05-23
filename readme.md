@@ -1,6 +1,6 @@
 # Resume
 
-Run `lualatex <file>.tex` compiles the resume.
+In `src/`, run `make`, which compiles the resume.
 
 ## Engine
 
